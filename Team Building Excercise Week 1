@@ -1,0 +1,38 @@
+# Team Building & Operation Agreement
+
+**Module:** COMP5047 Applied Software Engineering  
+**Project:** UniDorm Multi-Tenant SaaS Platform  
+**Group Number:** 8
+
+## 1. Team Members & Contact Details
+
+|  Student  |          Subsystem           | Student ID |
+----------------------------------------------------------
+|**Reuban** | Student Subsystem            |  19391345  |
+|**Gurbani**| Warden Subsystem             |  19349330  |
+|**Izzy**   | Platform Operator Subsystem  |  19315492  |
+|**Tina**   | Accomdation Office Subsystem |  19145048  |
+
+## 2. Communication Channels & Tools
+
+* **Primary Communication:** WhatsApp Group 
+* **Project Repository:** GitHub (`https://github.com/19391345-cyber/5047-Group-Coursework-Reuban`)
+* **UML Modeling Tool:** Papyrus 
+
+## 3. Weekly Meeting Schedule
+
+* **Day & Time:** Tuesdays, 1:00 PM – 2:00 PM (60 minutes)
+* **Venue:** NHHB (In-Person, post-practical session)
+* **Online Backup:** Microsoft Teams / WhatsApp Video Call (for emergency or follow-up discussions)
+
+## 4. Team Management & Operation Scheme
+
+1. **Leadership Structure:** 
+   * Team leadership and note-taking duties will be Reuban 
+2. **Repository & Code Quality Protocol:**
+   * All meeting agendas, draft minutes, and UML modeling work must be committed directly to GitHub immediately upon creation.
+   * Work commiting to the group repository requires a peer review in order to verify before merging 
+3. **Meeting Protocol Workflow:**
+   * **Pre-Meeting:** Leader prepares/distributes the agenda and commits it to GitHub before the meeting.
+   * **During Meeting:** Rough notes are recorded
+   * **Post-Meeting:** Leader writes formal minutes and submits them for team review. Every iteration that comes afterwards requires follow up review before finalising 
