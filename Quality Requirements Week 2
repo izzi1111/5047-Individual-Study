@@ -1,0 +1,59 @@
+Platform Operator Quality Requirements
+--------------------------------------
+My selected function is: FR-PO-1.1 Automated Tenant Onboarding
+
+SCOPE - Official FR-PO-1.1: “The subsystem shall provide an automated orchestration workflow to spin up new university tenants,
+and automatically provisioning cloud compute resources, including isolated database schemas, container namespaces, and storage buckets, etc.”
+The following numerical targets are proposals rather than commitments unlike the case study, therefore they require further confirmation from the team.
+BASIS - UniDorm Case Study 2026.
+
+QR (Quality Requirement), PO (Platform Operator), SP/P/R/SC (Security & Privacy, Performance, Reliability, Scalability),  QA (Quality Attribute), 00 (Requirement Num).
+
+Security And Privacy Protection
+-------------------------------
+QR-PO-SPQA-01 - When an operator submits a boarding request, the subsystem should accept it IF the authenticated operator has the 'tenant.create' permission.
+If the operator does not have that permission, their request should be rejected.
+
+QR-PO-SPQA-02 - For every sucessful provisioned tenant, its database schema, container name-space and storage bucket should be assigned to that tenant ID.
+Any attempted cross-tenant read,write and list operations shall be denied.
+
+QR-PO-SPQA-03 - All onboarding requests and responses that contain tenant identifiers or configuration secrets should use encryption/ encrypted transport.
+No sensitive information should be found in operator-visible logs.
+
+QR-PO-SPQA-04 - Every accepted or denied onboarding attempt should have a corresponding record.
+This should contain timestamps, operator IDs, Tenant IDs, action and outcome.
+
+Performance
+-----------
+QR-PO-PQA-01 - Under normal load of up to 5 simultaneous onboarding requests at least 95% of sucessful requests should reach active within 300 seconds
+
+QR-PO-PQA-02 - Under the same load, at least 95% of onboarding requests shall recieve acknowledgement in the form of a request ID within 2 seconds.
+
+QR-PO-PQA-03 - For a provision request that is currently in progress, the operator-visible status should reflect a backend state change within 10 seconds. 
+
+Reliability
+-----------
+QA-PO-RQA-01 - The onboarding request service should be available for at least 95% of minutes in each rolling 30-day period. 
+This is excluding unannounced downtime.
+
+QA-PO-RQA-02 - Under normal load at least 99% of valid onboarding requests should be sucessfully completed within a 10 minute timeframe.
+
+QA-PO-RQA-03 - When resource provisioning fails, this should be recorded within 60 seconds of detection. 
+If a fail request is marked active for longer than 10 minutes, it should be flagged for operator remediation.
+
+QA-PO-RQA-04 - When an operator retries the same onboarding request using the same key, the subsystem should create just one active tenant,
+and one set of tenant resources in 100 repeated request trials.
+
+Scalability
+-----------
+QA-PO-SCQA-01 - The onboarding workflow should support at least 100 registered tenants without any tenant being able to access anothers provisioned resources.
+
+QA-PO-SCQA-02 - At a peak of 20 simultaneous valid onboarding submissions, at least 95% should recieve request IDs within 5 seconds.
+Accepted requests taking longer should be queued rather than deleted.
+
+QA-PO-SCQA-03 - With 100 exisiting tenants, the system should complete at least 95% of a further 20 valid onboarding requests within 15 minutes.
+
+
+
+
+
