@@ -1,7 +1,21 @@
 Platform Operator Subsystem
+
 Discussed functional requirements:
 Tenant Management: FR-PO-1.1 Automated Tenant Onboarding, FR-PO-1.2 Customisation, FR-PO-1.3 Tenant Lifecycle Controls. 
+These allow for: new environments to be created for universities,
+customisation of branding & appearance and management of tenants including suspension, deletion and archiving.
+
 Operator Management: FR-PO-2.1 Operator Access Control, FR-PO-2.2 Immutable Audit Logging.
+These allow for: operator permissions to be controlled depending on role access and platform activities to be recorded.
+
 Subscriptions: FR-PO-3.1 Multi-Tier Software-as-a-Service Licensing.
-Usage Based Metering & Billing: FR-PO-3.2 Resource Usage Metering, FR-PO-3.3 Automated B2B Invoicing. 
-Global & Cross-University Services: FR-PO-4.1 Centralised AI/ML Model Management, FR-PO-4.2 Cross-Tenant Benchmarking, FR-PO-4.3 Continuous Active Machine Learning Pipeline, FR-PO-4.4 Tenant-Level System Broadcasts.
+This allows for subscription tiers.
+
+Usage Based Metering & Billing: FR-PO-3.2 Resource Usage Metering, FR-PO-3.3 Automated B2B Invoicing.
+These allow for: the measurement of tenants resource usage and the automation of invoices.
+
+Global & Cross-University Services: FR-PO-4.1 Centralised AI/ML Model Management, FR-PO-4.2 Cross-Tenant Benchmarking,
+FR-PO-4.3 Continuous Active Machine Learning Pipeline, FR-PO-4.4 Tenant-Level System Broadcasts.
+These allow for: the management of shared AI and machine learning models, comparisons of universities using anonymous data,
+improvement of AI models using relevant data and errors and system announcements to be received by relevant tenants.
+
