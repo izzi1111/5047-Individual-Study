@@ -53,7 +53,26 @@ Accepted requests taking longer should be queued rather than deleted.
 
 QA-PO-SCQA-03 - With 100 exisiting tenants, the system should complete at least 95% of a further 20 valid onboarding requests within 15 minutes.
 
+Interpretation & TradeOffs
+--------------------------
+For security and privacy there are two main risks: unauthorised tenant creation and cross-tenant data disclosure. 
+This is because of the amount of unviversities the platform supports and the data associated with its tenants and accomodations.
+Because UniDorm is a multi-tenant SaaS platform, the large amount of data it stores must be protected to ensure security, 
+and permissions on who can create new tenants must also be restricted.
 
+For performance, it is important to seperate acknowledgement and cloud provisioning measuring time. 
+This is because the operator should recieve a quick response stating that provisioning has started, even if the creating of resources takes longer.
 
+For reliability, it is important to make sure the system is not leaving behind partially configured tenants if the cloud server fails, because this could cause security
+or operational problems. Therefore it should focus on measuring availability, sucessful transactions and recovery seperately. 
+The recovery should either be retrying the operating or reversing incomplete changes. 
+
+For scalability, the number of universities on the platform should be considered alongside the number of simultaneous onboarding requests.
+It is important to focus on measuring administrative scalability for the number of universities, and load scalability for handling requests.
+
+During peak demand (20-requests) , the system may need to queue requests to prevent resource overload, making its end-to-end target deliberately looser.
+This shows a performance and scalability trade-off, meaning the system can handle a larger number of requests however some may take longer to complete. 
+However this can help avoid the cost of maintaining excessive cloud resources to process every request immediately.
+This is why the proposed 20 request process time is longer than the five request time, overall this represents a trade-off between respose time and resource capacity.
 
 
