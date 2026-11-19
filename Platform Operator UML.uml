@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_f34LEORBEfGFEOWVf1wyMw" name="Platform Operator UML">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_gNEX8ORBEfGFEOWVf1wyMw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_YaBQYORXEfGFEOWVf1wyMw" name="Platform Operator"/>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_0pTJkORXEfGFEOWVf1wyMw" name="UniDorm - Platform Operator Subystem" useCase="_OUKlQORYEfGFEOWVf1wyMw _6stoEORYEfGFEOWVf1wyMw _S3GvgORZEfGFEOWVf1wyMw _W5XrEORZEfGFEOWVf1wyMw _eDE4sORZEfGFEOWVf1wyMw _i6R4MORZEfGFEOWVf1wyMw _r3ZkMORZEfGFEOWVf1wyMw _HpGJgORaEfGFEOWVf1wyMw _KNvQgORaEfGFEOWVf1wyMw _RADR0ORaEfGFEOWVf1wyMw _TuGMcORaEfGFEOWVf1wyMw _K2EUcORdEfGFEOWVf1wyMw">
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_OUKlQORYEfGFEOWVf1wyMw" name="Onboard University Tenant (FR-PO-1.1)" subject="_0pTJkORXEfGFEOWVf1wyMw">
+      <include xmi:type="uml:Include" xmi:id="_wUm9EOReEfGFEOWVf1wyMw" addition="_eDE4sORZEfGFEOWVf1wyMw"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_6stoEORYEfGFEOWVf1wyMw" name="Configure Tenant Customisation (FR-PO-1.2) " subject="_0pTJkORXEfGFEOWVf1wyMw"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_S3GvgORZEfGFEOWVf1wyMw" name="Manage Tenant Lifecycle (FR-PO-1.3)" subject="_0pTJkORXEfGFEOWVf1wyMw"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_W5XrEORZEfGFEOWVf1wyMw" name="Manage Operator Access Controls (FR-PO-2.1)" subject="_0pTJkORXEfGFEOWVf1wyMw"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_eDE4sORZEfGFEOWVf1wyMw" name="Maintain Imutable Audit Logs (FR-PO-2.2)" subject="_0pTJkORXEfGFEOWVf1wyMw"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_i6R4MORZEfGFEOWVf1wyMw" name="Manage SaaS Licensing (FR-PO-3.1)" subject="_0pTJkORXEfGFEOWVf1wyMw"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_r3ZkMORZEfGFEOWVf1wyMw" name="Meter Tenant Resource Usage (FR-PO-3.2)" subject="_0pTJkORXEfGFEOWVf1wyMw"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_HpGJgORaEfGFEOWVf1wyMw" name="Manage AI/ML Models (FR-PO-4.1)" subject="_0pTJkORXEfGFEOWVf1wyMw"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_KNvQgORaEfGFEOWVf1wyMw" name="Generate Tenant Benchmarks (FR-PO-4.2)" subject="_0pTJkORXEfGFEOWVf1wyMw"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_RADR0ORaEfGFEOWVf1wyMw" name="Manage Learning PipeLine (FR-PO-4.3)" subject="_0pTJkORXEfGFEOWVf1wyMw"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_TuGMcORaEfGFEOWVf1wyMw" name="Send Tenant Broadcasts (FR-PO-4.4)" subject="_0pTJkORXEfGFEOWVf1wyMw"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_K2EUcORdEfGFEOWVf1wyMw" name="Generate B2B Invoices (FR-PO-3.3)" subject="_0pTJkORXEfGFEOWVf1wyMw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_FkVR4ORZEfGFEOWVf1wyMw" memberEnd="_FkXuIORZEfGFEOWVf1wyMw _FkXuIeRZEfGFEOWVf1wyMw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_FkWgAORZEfGFEOWVf1wyMw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_FkXHEORZEfGFEOWVf1wyMw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_FkXuIORZEfGFEOWVf1wyMw" name="onboard university tenant" type="_OUKlQORYEfGFEOWVf1wyMw" association="_FkVR4ORZEfGFEOWVf1wyMw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_FkXuIeRZEfGFEOWVf1wyMw" name="platform operator" type="_YaBQYORXEfGFEOWVf1wyMw" association="_FkVR4ORZEfGFEOWVf1wyMw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_1XkoAORbEfGFEOWVf1wyMw" memberEnd="_1XtK4ORbEfGFEOWVf1wyMw _1XuZAORbEfGFEOWVf1wyMw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1Xr8wORbEfGFEOWVf1wyMw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1Xsj0ORbEfGFEOWVf1wyMw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_1XtK4ORbEfGFEOWVf1wyMw" name="platform operator" type="_YaBQYORXEfGFEOWVf1wyMw" association="_1XkoAORbEfGFEOWVf1wyMw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_1XuZAORbEfGFEOWVf1wyMw" name="configure tenant customisation (fr-po-1.2) " type="_6stoEORYEfGFEOWVf1wyMw" association="_1XkoAORbEfGFEOWVf1wyMw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_2ueJgORbEfGFEOWVf1wyMw" memberEnd="_2uf-suRbEfGFEOWVf1wyMw _2uglwORbEfGFEOWVf1wyMw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2uf-sORbEfGFEOWVf1wyMw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2uf-seRbEfGFEOWVf1wyMw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_2uf-suRbEfGFEOWVf1wyMw" name="platform operator" type="_YaBQYORXEfGFEOWVf1wyMw" association="_2ueJgORbEfGFEOWVf1wyMw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_2uglwORbEfGFEOWVf1wyMw" name="manage tenant lifecycle (fr-po-1.3)" type="_S3GvgORZEfGFEOWVf1wyMw" association="_2ueJgORbEfGFEOWVf1wyMw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_3ycH8ORbEfGFEOWVf1wyMw" memberEnd="_3yd9IORbEfGFEOWVf1wyMw _3yd9IeRbEfGFEOWVf1wyMw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_3ydWEORbEfGFEOWVf1wyMw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_3ydWEeRbEfGFEOWVf1wyMw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_3yd9IORbEfGFEOWVf1wyMw" name="platform operator" type="_YaBQYORXEfGFEOWVf1wyMw" association="_3ycH8ORbEfGFEOWVf1wyMw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_3yd9IeRbEfGFEOWVf1wyMw" name="manage operator access controls (fr-po-2.1)" type="_W5XrEORZEfGFEOWVf1wyMw" association="_3ycH8ORbEfGFEOWVf1wyMw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_9UjFoORbEfGFEOWVf1wyMw" memberEnd="_9Ulh4eRbEfGFEOWVf1wyMw _9Ulh4uRbEfGFEOWVf1wyMw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9UkTwORbEfGFEOWVf1wyMw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9Ulh4ORbEfGFEOWVf1wyMw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_9Ulh4eRbEfGFEOWVf1wyMw" name="platform operator" type="_YaBQYORXEfGFEOWVf1wyMw" association="_9UjFoORbEfGFEOWVf1wyMw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_9Ulh4uRbEfGFEOWVf1wyMw" name="manage ai/ml models (fr-po-4.1)" type="_HpGJgORaEfGFEOWVf1wyMw" association="_9UjFoORbEfGFEOWVf1wyMw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="__oRbwORbEfGFEOWVf1wyMw" memberEnd="__oSp4uRbEfGFEOWVf1wyMw __oSp4-RbEfGFEOWVf1wyMw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__oSp4ORbEfGFEOWVf1wyMw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__oSp4eRbEfGFEOWVf1wyMw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="__oSp4uRbEfGFEOWVf1wyMw" name="platform operator" type="_YaBQYORXEfGFEOWVf1wyMw" association="__oRbwORbEfGFEOWVf1wyMw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="__oSp4-RbEfGFEOWVf1wyMw" name="generate tenant benchmarks (fr-po-4.2)" type="_KNvQgORaEfGFEOWVf1wyMw" association="__oRbwORbEfGFEOWVf1wyMw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_A13QQORcEfGFEOWVf1wyMw" memberEnd="_A15sgORcEfGFEOWVf1wyMw _A15sgeRcEfGFEOWVf1wyMw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_A15FcORcEfGFEOWVf1wyMw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_A15FceRcEfGFEOWVf1wyMw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_A15sgORcEfGFEOWVf1wyMw" name="platform operator" type="_YaBQYORXEfGFEOWVf1wyMw" association="_A13QQORcEfGFEOWVf1wyMw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_A15sgeRcEfGFEOWVf1wyMw" name="send tenant broadcasts (fr-po-4.4)" type="_TuGMcORaEfGFEOWVf1wyMw" association="_A13QQORcEfGFEOWVf1wyMw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_EeOeEORcEfGFEOWVf1wyMw" memberEnd="_EeQTQuRcEfGFEOWVf1wyMw _EeQ6UORcEfGFEOWVf1wyMw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_EeQTQORcEfGFEOWVf1wyMw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_EeQTQeRcEfGFEOWVf1wyMw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_EeQTQuRcEfGFEOWVf1wyMw" name="platform operator" type="_YaBQYORXEfGFEOWVf1wyMw" association="_EeOeEORcEfGFEOWVf1wyMw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_EeQ6UORcEfGFEOWVf1wyMw" name="manage saas licensing (fr-po-3.1)" type="_i6R4MORZEfGFEOWVf1wyMw" association="_EeOeEORcEfGFEOWVf1wyMw"/>
+  </packagedElement>
+</uml:Model>
